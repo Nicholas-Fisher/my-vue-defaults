@@ -1,0 +1,18 @@
+$mobile: '(max-width: 768px)';
+$not-mobile: '(min-width: 769px)';
+$std-font-color: #555;
+$std-line-height: 1.5em;
+$std-font-size: 16px;
+$header-height: 70px;
+$mobile-nav-height: 50px;
+$footer-margin: 80px;
+$max-width: 1500px;
+$dimmer-color: rgba(0, 0, 0, 0.5);
+$std-shadow: 0 3px 6px rgba(#000, 0.15);
+$theme-color1: #000;
+
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
