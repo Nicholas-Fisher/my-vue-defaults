@@ -1,17 +1,17 @@
 <template>
   <div class="hamburger-menu mobile-only" :class="{'full': isFullNav}">
-    <div class="nav-dimmer" @click="navToggle"/>
+    <div class="nav-dimmer" @click="navToggle" />
     <div class="nav-touchable">
       <button class="nav-btn" @click="navToggle">
         <div class="label" v-show="!isFullNav">
-          <fa :icon="['fas', 'bars']"/>
+          <fa :icon="['fas', 'bars']" />
         </div>
         <div class="label" v-show="isFullNav">
-          <fa :icon="['fas', 'times']"/>
+          <fa :icon="['fas', 'times']" />
         </div>
       </button>
       <router-link v-for="(r, index) in routes" :key="index" :to="r.to" class="nav-btn" exact>
-          <span v-text="r.name"/>
+        <span v-text="r.name" />
       </router-link>
     </div>
   </div>
@@ -27,13 +27,13 @@ export default {
   },
   computed: {
     fullNavHeight() {
-      return -1*(this.$props.routes.length * 50) + 'px';
+      return -1 * (this.$props.routes.length * 50) + 'px';
     },
   },
   data() {
     return {
       isFullNav: false,
-    }
+    };
   },
   mounted() {
     this.$el.style.bottom = this.fullNavHeight;
@@ -46,14 +46,14 @@ export default {
       } else {
         this.$el.style.bottom = this.fullNavHeight;
       }
-    }
+    },
   },
   watch: {
     $route() {
       this.$data.isFullNav = true;
       this.navToggle();
-    }
-  }
+    },
+  },
 };
 </script>
 
