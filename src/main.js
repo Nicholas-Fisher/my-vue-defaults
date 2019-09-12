@@ -3,7 +3,9 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 import {
   faTimes,
 } from '@fortawesome/pro-solid-svg-icons';
+import 'normalize.css';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import router from "./router";
 
 library.add(
   faTimes,
