@@ -1,12 +1,19 @@
+import Vue from 'vue';
+import App from './App.vue';
+import './registerServiceWorker';
+import router from '@/router.ts';
+import store from '@/store.ts';
 import HamburgerMenu from '@/components/HamburgerMenu.vue';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import {
+  faBars,
   faTimes,
 } from '@fortawesome/pro-solid-svg-icons';
 import 'normalize.css';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 library.add(
+  faBars,
   faTimes,
 );
 
@@ -17,5 +24,6 @@ Vue.config.productionTip = false;
 
 new Vue({
   router,
-  render: (h) => h(App),
+  store,
+  render: (h: any) => h(App),
 }).$mount('#app');

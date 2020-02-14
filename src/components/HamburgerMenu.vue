@@ -65,6 +65,7 @@ export default {
 }
 svg {
   color: $theme-color1;
+
 }
 .hamburger-menu {
   z-index: 100;
