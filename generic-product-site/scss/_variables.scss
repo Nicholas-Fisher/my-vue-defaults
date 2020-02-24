@@ -1,0 +1,28 @@
+$desktop: "(min-width: 1025px)";
+$tablet: "(min-width: 769px) and (max-width: 1024px)";
+$mobile: "(max-width: 768px)";
+$not-mobile: "(min-width: 769px)";
+$std-font-color: #555;
+$std-line-height: 1.5em;
+$std-font-size: 16px;
+$header-height: 70px;
+$mobile-nav-height: 50px;
+$footer-margin: 80px;
+$dimmer-color: rgba(0, 0, 0, 0.5);
+$std-shadow: 0 3px 6px rgba(#000, 0.15);
+$nav-height: 60px;
+$mobile-text-size: 16px;
+$desktop-text-size: 18px;
+$nav-z: 151;
+$nav-number-of-buttons: 4;
+$nav-button-height: 50px;
+$max-width: 1250px;
+$theme-color1: #000;
+$std-border-radius: 5px;
+$footer-height: 60px;
+
+@mixin flex-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
