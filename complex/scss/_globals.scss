@@ -1,26 +1,28 @@
-@import './_variables.scss';
+@import "./_variables.scss";
 
 .not-on-mobile {
-	@media #{$mobile} {
-		display: none !important;
-	}
+  @media #{$mobile} {
+    display: none !important;
+  }
 }
 .mobile-only {
-	@media #{$not-mobile} {
-		display: none !important;
-	}
+  @media #{$not-mobile} {
+    display: none !important;
+  }
 }
 body {
   background-color: #eee;
   display: flex;
-	justify-content: center;
+  justify-content: center;
   font-family: p, Helvetica, Arial, sans-serif;
   color: $std-font-color;
-	font-size: $std-font-size;
-	-webkit-font-smoothing: antialiased;
+  font-size: $std-font-size;
+  -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   box-sizing: border-box;
 }
 p {

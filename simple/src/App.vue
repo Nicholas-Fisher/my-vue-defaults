@@ -3,7 +3,7 @@
     <div class="content">
       <router-view/>
     </div>
-    <footer>&copy; Cosmic Games {{new Date().getFullYear()}}</footer>
+    <footer>&copy; Company {{new Date().getFullYear()}}</footer>
     <hamburger-menu :routes="routes"/>
   </div>
 </template>
@@ -25,5 +25,5 @@ export default {
 </script>
 
 <style lang="scss">
-@import "./scss/_globals.scss";
+@import './scss/_globals.scss';
 </style>
